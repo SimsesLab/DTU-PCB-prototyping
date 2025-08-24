@@ -4,7 +4,7 @@ Guide for producing PCB's from KiCad with DTU Ballerup equipment.
 <br>
 
 ## What will you need?
-- KiCad 9.0+
+- [KiCad 9.0+](https://www.kicad.org/download/)
 - A **single-sided**[^1] copper PCB FR4 board.
 - Have participated in the safety course held by the professor or TA's.
 
@@ -31,27 +31,44 @@ It can also be a good idea to increase the size of traces for easier result cons
 >
 > It is **not possible to do afterwards.**
 
-To do so:
-1. Go into *Board Setup*.
-
-![Design note 2](images-for-guides/kicad_design_note2.png "Design note 2")
-
+**To do so, do as shown in the *GIF*:**
+1. Go into *Board Setup*, by clicking the small green circuit icon next to the save button.
 2. Choose the *Net Classes* option under *Design Rules*:
-
-![Design note 3](images-for-guides/kicad_design_note3.png "Design note 3")
-
 3. And change both *Clearance* and *Track Width* to **0,8 mm** minimum. 1,0 mm is likely the largest you will be able to do with most through-hole components.
 
+![Kicad netclasses](images-for-guides/kicad_net-constraints.gif "Kicad netclasses")
+
+
+<details>
+  <summary><b>Step by step with pictures</summary>
+  
+   1. Go into *Board Setup*, by clicking the small green circuit icon next to the save button.
+
+   ![Design note 2](images-for-guides/kicad_design_note2.png "Design note 2")
+
+   2. Choose the *Net Classes* option under *Design Rules*:
+
+   ![Design note 3](images-for-guides/kicad_design_note3.png "Design note 3")
+
+   3. And change both *Clearance* and *Track Width* to **0,8 mm** minimum. 1,0 mm is likely the largest you will be able to do with most through-hole components.
+  
+</details>
+
+
+
+
 <br>
+
+
 
 ## Making PCBs with the Fiber laser
 - [Exporting from KiCad](#exporting-from-kicad)
 - [Preparing your PCB](#preparing-your-pcb)
 - [Using the Fiber laser](#using-the-fiber-laser)
 
----
 
 <br>
+
 
 ### Exporting from KiCad:
 When choosing to make your PCB with the Fiber laser, you need to do the following steps in KiCad:
