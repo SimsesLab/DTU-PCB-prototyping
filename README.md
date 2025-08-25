@@ -88,12 +88,20 @@ Where the most important settings are as follows:
    - *Plot on All Layers*: **Edge.Cuts**
    - *Drill marks*: **Small**
    - *Plot graphic items using their contours*: **Unselected**
+   - *Export units*: **Millimeters**
 
 ---
 
 <br>
 
 ### Preparing your PCB
+
+The most important step before going out and making or buying a PCB, is doing the your basic checks you learned in the course!
+- Have you used the correct footprints?
+- Have you designed your PCB on the correct size, and not flipped any components?
+- Have you tried running the *Design Rule Checker* (DRC)?
+If any of these steps have been skipped or done incorrectly, then making the PCB is a waste because its likely not working once you have it in your hand.
+
 Before going out to find and cut a bare PCB board, take some measuments of your design in KiCad so you know how big to cut your PCB on the shear. Be sure to not going too tight with your measurments. Add around 2mm to your total width and length, so you don't risk your final board coming out too small.
 ![KiCad measuring](images-for-guides/kicad_measuring.gif "KiCad measuring")
 
@@ -121,7 +129,61 @@ After cutting your board to the correct size (plus your added 2~mm padding), tak
 > Otherwise you will end up blocking the machine for others that may be prepared to use the machine.
 
 
+1. Open the xTool software.
 
+![xTool step 1](images-for-guides/xtool-images/xtool_1.png "xTool step 1")
+
+2. In the top left corner, click on the **X** icon, then `File` and `Import image`.
+
+![xTool step 2](images-for-guides/xtool-images/xtool_2.png "xTool step 2")
+
+3. Find your generated *dxf* file, and open it.
+
+![xTool step 3](images-for-guides/xtool-images/xtool_3.png "xTool step 3")
+
+4. When the files is imported, **make sure to *flip* your design and make it *compound***.
+
+![xTool step 4](images-for-guides/xtool-images/xtool_4.png "xTool step 4")
+
+5. Confirm that your design looks something like this. **Note**, the black parts of the design will be **removed** by the laser.
+
+![xTool step 5](images-for-guides/xtool-images/xtool_5.png "xTool step 5")
+
+6. When you select your design, you should see the right panel change. Select **Engrave**, and make sure that *Output* is green.
+
+![xTool step 6](images-for-guides/xtool-images/xtool_6.png "xTool step 6")
+
+7. Insert your [**prepared board**](#preparing-your-pcb) onto the Fiber laser bed, and align it with the fixture. Try and get your design to be as much in the center of the machine as possible.
+
+### Missing images! Coming soon
+
+8. Click the *Auto height ajustment* button, and wait for the machine to complete.
+
+![xTool step 7](images-for-guides/xtool-images/xtool_7.png "xTool step 7")
+
+### Missing images! Coming soon
+
+9. Make sure that the cutting parameters match those on the pictures, or the updated settings given to you by your instructers, professor or TA's.
+
+![xTool step 8](images-for-guides/xtool-images/xtool_8.png "xTool step 8")
+
+10. If a picture of the machine bed is not shown within the software click on the camera icon next to the automatic height button.
+You now need to move your design, so that it fits inside of your precut PCB board. **Make sure** that the design does not flow over the edges! You should strive to place your design as much in the middle of your board, that should be a tiny bit oversized!
+
+### Missing images! Coming soon
+
+11. Confirm your PCB placement by clicking the *Framing* button.
+**This is your last chance to check if everything seems correct**.
+Please check the following:
+- Is my design mirrored on the Laser software? If not, mirror the design!
+- Is the Traces of my design white, and the area round it black? Remember that the black areas are removed, so if your traces are black, then your PCB is useless.
+- Have I cut the PCB board large enough and have I brushed the surface? If not, then go back and do so.
+
+12. When everything is ready, click the *Process* button, and follow the steps for starting the machine.
+
+When the machine is working, remember to not stare at the burn light on the PCB!
+
+### Missing images! Coming soon
 
 ---
 
