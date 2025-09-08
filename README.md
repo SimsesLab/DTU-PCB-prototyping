@@ -62,12 +62,43 @@ It can also be a good idea to increase the size of traces for easier result cons
 
 
 ## Making PCBs with the Fiber laser
+- [Correcting your design for the Laser](#correcting-your-design-for-the-laser)
 - [Exporting from KiCad](#exporting-from-kicad)
 - [Preparing your PCB](#preparing-your-pcb)
 - [Using the Fiber laser](#using-the-fiber-laser)
 
 
 <br>
+
+### Correcting your design for the Laser:
+Before moving to making your PCB on the Fiber laser, you'll need to add a *Filled zone* with some certain settings. We do this as a hack to isolate the traces, and save time and material when we use the Fiber laser. If we were to simply export a PCB with only the traces and an outline, the laser would remove everything but the traces, which would take longer, wear out the laser faster, and be more messy than simply removing a smaller area around the traces.
+
+To create a proper *Filled zone* for the purpose of using the Fiber laser, do as shown in the GIF:
+
+![Kicad filled zones](images-for-guides/kicad_filled_zones.gif "Kicad filled zones")
+
+<details>
+  <summary><b>Step by step with pictures</summary>
+  
+   1. Select the back cobber layer **B.Cu**.
+
+   2. Select *Draw Filled Zones* from the toolbar on the right.
+
+   3. Select your first corner of the PCB.
+
+   4. Be sure that the *B.Cu* layer is selected, and that *\<no net\>* is selected.
+
+   5. Change the following:
+      - *Pad connections* to **None**.
+      - *Clearance* to **0,75** mm.
+      - *Minimum width* to **0,25** mm.
+      - *Fill type* to **Solid fill**.
+
+   6. Finish selecting the rest of your corners, until the board gains a hatched outline.
+
+   7. Go into `Edit` and click `Fill All Zones`.
+  
+</details>
 
 
 ### Exporting from KiCad:
@@ -145,13 +176,13 @@ After cutting your board to the correct size (plus your added 2~mm padding), tak
 
 ![xTool step 4](images-for-guides/xtool-images/xtool_4.png "xTool step 4")
 
-5. Confirm that your design looks something like this. **Note**, the black parts of the design will be **removed** by the laser.
-
-![xTool step 5](images-for-guides/xtool-images/xtool_5.png "xTool step 5")
-
-6. When you select your design, you should see the right panel change. Select **Engrave**, and make sure that *Output* is green.
+5. When you select your design, you should see the right panel change. Select **Engrave**, and make sure that *Output* is green.
 
 ![xTool step 6](images-for-guides/xtool-images/xtool_6.png "xTool step 6")
+
+6. Confirm that your design looks something like this. **Note**, the black parts of the design will be **removed** by the laser.
+
+![xTool step 5](images-for-guides/xtool-images/xtool_5.png "xTool step 5")
 
 7. Insert your [**prepared board**](#preparing-your-pcb) onto the Fiber laser bed, and align it with the fixture. Try and get your design to be as much in the center of the machine as possible.
 
