@@ -249,3 +249,11 @@ Work in progress (monoFab SRM-20)
 [^1]: Currently we are limited to one-sided PCB's until further testing and workflows are prepared. The students are free to try their hand ad two-sided PCB's, but should then consult with the people responsible for the machines, and it will be at their own risk and time.
 
 [^2]: This step is only necessary for PCB-milling and Fiber-etching.
+
+[^3]: List of footprints for the components in the DTU-components-shop:
+
+| Component  | DTU Component shop name | KiCAD footprint |
+|------------|-------------------|---------------------------------------------------------------|
+| Resistors  | Resistor section  | Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal |
+| PinSockets | Connector section | Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical    |
+| PinHeaders | Connector section | Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical    |
