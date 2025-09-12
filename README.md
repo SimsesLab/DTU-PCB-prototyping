@@ -13,7 +13,7 @@ Guide for producing PCB's from KiCad with DTU Ballerup equipment.
 ## Contents
 - [What to keep in mind](#what-to-keep-in-mind)
 - [Making PCBs with the Fiber laser](#making-pcbs-with-the-fiber-laser)
-- [Making PCBs with the Roland CNC milling machine](#making-pcbs-with-the-roland-cnc-milling-machine)
+- [Making PCBs with the Roland CNC router](#making-pcbs-with-the-roland-cnc-router)
 
 <br>
 
@@ -34,7 +34,7 @@ It can also be a good idea to increase the size of traces for easier result cons
 **To do so, do as shown in the *GIF*:**
 1. Go into *Board Setup*, by clicking the small green circuit icon next to the save button.
 2. Choose the *Net Classes* option under *Design Rules*:
-3. And change both *Clearance* and *Track Width* to **0,8 mm** minimum. 1,0 mm is likely the largest you will be able to do with most through-hole components.
+3. Change *Clearance* to **0,8 mm** and *Track Width* to a minimum of **0,8 mm**, if possible then 1,0 mm and larger is prefered for working with most through-hole component PCB's made on the Fiber laser and CNC router.
 
 ![Kicad netclasses](images-for-guides/kicad_net-constraints.gif "Kicad netclasses")
 
@@ -50,7 +50,7 @@ It can also be a good idea to increase the size of traces for easier result cons
 
    ![Design note 3](images-for-guides/kicad_design_note3.png "Design note 3")
 
-   3. And change both *Clearance* and *Track Width* to **0,8 mm** minimum. 1,0 mm is likely the largest you will be able to do with most through-hole components.
+   3. And change both *Clearance* and *Track Width* to 0,8 mm **minimum**. 1,0 mm and above, if possible, is prefered for working with most through-hole component PCB's made on the Fiber laser and CNC router.
   
 </details>
 
@@ -132,6 +132,7 @@ The most important step before going out and making or buying a PCB, is doing th
 - Have you used the correct footprints?
 - Have you designed your PCB on the correct size, and not flipped any components?
 - Have you tried running the *Design Rule Checker* (DRC)?
+- Have you added your own PCB board cutout in the `Edge.Cuts` layer?
 If any of these steps have been skipped or done incorrectly, then making the PCB is a waste because its likely not working once you have it in your hand.
 
 Before going out to find and cut a bare PCB board, take some measuments of your design in KiCad so you know how big to cut your PCB on the shear. Be sure to not going too tight with your measurments. Add around 2mm to your total width and length, so you don't risk your final board coming out too small.
@@ -202,14 +203,31 @@ After cutting your board to the correct size (plus your added 2~mm padding), tak
 10. If a picture of the machine bed is not shown within the software click on the camera icon next to the automatic height button.
 You now need to move your design, so that it fits inside of your precut PCB board. **Make sure** that the design does not flow over the edges! You should strive to place your design as much in the middle of your board, that should be a tiny bit oversized!
 
+![xTool bed picture](images-for-guides/xtool-images/Align_PCB_on_board.png "xTool bed picture")
+
+
 ### Missing images! Coming soon
 
-11. Confirm your PCB placement by clicking the *Framing* button.
+
+11. Confirm your PCB placement by clicking the *Framing* button in the lower right corner of the xTool window.
+
+![xTool framing](images-for-guides/xtool-images/Framing.png "xTool framing")
+
+Be sure to move your PCB board, so it fits within your [**prepared board**](#preparing-your-pcb). If the *laser-frame* spills over the edges, then **do not cut!** Your PCB will likely come out wrong, and **you may damage the machine!**.
+
+![Framing Good_No-Good](images-for-guides/Pictures/Good_No-Good_marking.png "Framing Good_No-Good")
+
 **This is your last chance to check if everything seems correct**.
-Please check the following:
-- Is my design mirrored on the Laser software? If not, mirror the design!
-- Is the Traces of my design white, and the area round it black? Remember that the black areas are removed, so if your traces are black, then your PCB is useless.
-- Have I cut the PCB board large enough and have I brushed the surface? If not, then go back and do so.
+
+
+> [!IMPORTANT]
+> Please check the following:
+> - Is my design mirrored on the Laser software? If not, mirror the design!
+> - Is the Traces of my design white, and the area round it black? Remember that the black areas are removed, so if your traces are black, then your PCB is useless.
+> - Have I cut the PCB board large enough and have I brushed the surface? If not, then go back and do so.
+> - Is my cutting parameters all correct? If not, then go back and make sure the settings match the recommended settings.
+> 
+
 
 12. When everything is ready, click the *Process* button, and follow the steps for starting the machine.
 
@@ -219,7 +237,7 @@ When the machine is working, remember to not stare at the burn light on the PCB!
 
 ---
 
-## Making PCBs with the Roland CNC milling machine
+## Making PCBs with the Roland CNC router
 Work in progress (monoFab SRM-20)
 
 
