@@ -119,6 +119,7 @@ Where the most important settings are as follows:
    - *Plot on All Layers*: **Edge.Cuts**
    - *Drill marks*: **Small**
    - *Plot graphic items using their contours*: **Unselected**
+   - *Plot drawing sheet*: **Unselected**
    - *Export units*: **Millimeters**
 
 ---
@@ -160,9 +161,9 @@ After cutting your board to the correct size (plus your added 2~mm padding), tak
 > Otherwise you will end up blocking the machine for others that may be prepared to use the machine.
 
 
-1. Open the xTool software.
+1. Open the xTool software by clicking on the *xTool Creative Space* icon on the desktop, and create a new project, by clicking on the *X* icon in the top left corner of the window.
 
-![xTool step 1](images-for-guides/xtool-images/xtool_1.png "xTool step 1")
+![xTool desktop ikon](images-for-guides/xtool-images/xTool_icon.png "xTool desktop ikon")
 
 2. In the top left corner, click on the **X** icon, then `File` and `Import image`.
 
@@ -184,7 +185,7 @@ After cutting your board to the correct size (plus your added 2~mm padding), tak
 
 ![xTool step 5](images-for-guides/xtool-images/xtool_5.png "xTool step 5")
 
-7. Insert your [**prepared board**](#preparing-your-pcb) onto the Fiber laser bed, and align it with the fixture. Try and get your design to be as much in the center of the machine as possible.
+7. Make sure that the sacrificial build-plate on the Laserbed, and lay your [**prepared board**](#preparing-your-pcb) onto the sacrificial build-plate, and align it with the fixture. Try and get your design to be as much in the center of the machine as possible.
 
 ### Missing images! Coming soon
 
