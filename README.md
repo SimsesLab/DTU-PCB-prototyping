@@ -62,10 +62,17 @@ It can also be a good idea to increase the size of traces for easier result cons
 
 
 ## Making PCBs with the Fiber laser
+- [Selecting the right components](#selecting-the-right-components)
 - [Correcting your design for the Laser](#correcting-your-design-for-the-laser)
 - [Exporting from KiCad](#exporting-from-kicad)
 - [Preparing your PCB](#preparing-your-pcb)
 - [Using the Fiber laser](#using-the-fiber-laser)
+
+
+<br>
+
+### Selecting the right components
+Make sure that you have selected the proper footprints for your components. If you use components from the Component-shop on Ballerup Campus, use the footprints at the bottom of this guide [^3].
 
 
 <br>
@@ -266,8 +273,12 @@ Work in progress (monoFab SRM-20)
 
 [^3]: List of footprints for the components in the DTU-components-shop:
 
-| Component  | DTU Component shop name | KiCAD footprint |
-|------------|-------------------|---------------------------------------------------------------|
-| Resistors  | Resistor section  | Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal |
-| PinSockets | Connector section | Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical    |
-| PinHeaders | Connector section | Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical    |
+| Component       | DTU Component shop name | KiCAD footprint                                                      |
+|-----------------|-------------------------|----------------------------------------------------------------------|
+| Resistors       | Resistor section        | Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal        |
+| PinSockets      | Connector section       | Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical           |
+| PinHeaders      | Connector section       | Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical           |
+| ICs and sockets | Connector section       | Package_DIP:DIP-<change this to the number of pins>_W7.62mm_LongPads |
+| Diodes          |                         | Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal                           |
+| Large LEDs      | LED section             | LED_THT:LED_D5.0mm                                                   |
+| Small LEDs      | LED section             | LED_THT:LED_D3.0mm                                                   |
