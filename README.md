@@ -70,7 +70,7 @@ It can also be a good idea to increase the size of traces for easier result cons
 
 <br>
 
-### Correcting your design for the Laser:
+### Correcting your design for the Laser
 Before moving to making your PCB on the Fiber laser, you'll need to add a *Filled zone* with some certain settings. We do this as a hack to isolate the traces, and save time and material when we use the Fiber laser. If we were to simply export a PCB with only the traces and an outline, the laser would remove everything but the traces, which would take longer, wear out the laser faster, and be more messy than simply removing a smaller area around the traces.
 
 To create a proper *Filled zone* for the purpose of using the Fiber laser, do as shown in the GIF:
@@ -122,6 +122,9 @@ Where the most important settings are as follows:
    - *Plot drawing sheet*: **Unselected**
    - *Export units*: **Millimeters**
 
+When the settings match the list above, export your DXF file by clicking *Plot*.
+
+
 ---
 
 <br>
@@ -162,7 +165,7 @@ After cutting your board to the correct size (plus your added 2~mm padding), tak
 > Otherwise you will end up blocking the machine for others that may be prepared to use the machine.
 
 
-1. Open the xTool software by clicking on the *xTool Creative Space* icon on the desktop, and create a new project, by clicking on the *X* icon in the top left corner of the window.
+1. Open the xTool software by clicking on the *xTool Creative Space* icon on the desktop, and create a new project, by clicking on the *X* icon in the top right corner of the window, or by opening a new tab.
 
 ![xTool desktop ikon](images-for-guides/xtool-images/xTool_icon.png "xTool desktop ikon")
 
@@ -186,36 +189,47 @@ After cutting your board to the correct size (plus your added 2~mm padding), tak
 
 ![xTool step 5](images-for-guides/xtool-images/xtool_5.png "xTool step 5")
 
-7. Make sure that the sacrificial build-plate on the Laserbed, and lay your [**prepared board**](#preparing-your-pcb) onto the sacrificial build-plate, and align it with the fixture. Try and get your design to be as much in the center of the machine as possible.
+> [!NOTE]
+> The default import does not make the holes for the through-hole components.
+> To fix this, and have the holes engraved as well, click on the icon next to the *Make compound* called **Edit compound**.
+> Then select a hole and click delete on your keyboard, it should then become black like the rest of the engraving areas.
+> Do this for every hole in your PCB design, untill they are all black.
 
-### Missing images! Coming soon
+7. Make sure that the sacrificial build-plate on the Laserbed, and lay your [**prepared board**](#preparing-your-pcb) onto the sacrificial build-plate. Try and get your design to be as much in the center of the machine as possible.
 
-8. Click the *Auto height ajustment* button, and wait for the machine to complete.
+8. Now click on the *Framing* button in the lower right corner of the xTool window. A blue outline of your design will appear on the machinne. Use this box to align your [**prepared board**](#preparing-your-pcb) to where the machine will cut. 
 
-![xTool step 7](images-for-guides/xtool-images/xtool_7.png "xTool step 7")
+![xTool framing](images-for-guides/xtool-images/Framing.png "xTool framing")
 
-### Missing images! Coming soon
+Be sure that the framing box fit and does not spill over the edges.. If the *laser-frame* spills over the edges, then **do not cut!** Your PCB will likely come out wrong, and **you may damage the machine!**.
 
-9. Make sure that the cutting parameters match those on the pictures, or the updated settings given to you by your instructers, professor or TA's.
+Also, if your board is cut too close to the final PCB size, it becomes quite difficult to get the alignment right. If its too tight, start over and cut a larger piece. It is much easier to cut your PCB to size **after** it has been engraved, rather than before.
 
-![xTool step 8](images-for-guides/xtool-images/xtool_8.png "xTool step 8")
+![Framing Good_No-Good](images-for-guides/Pictures/Good_No-Good_marking.png "Framing Good_No-Good")
 
-10. If a picture of the machine bed is not shown within the software click on the camera icon next to the automatic height button.
-You now need to move your design, so that it fits inside of your precut PCB board. **Make sure** that the design does not flow over the edges! You should strive to place your design as much in the middle of your board, that should be a tiny bit oversized!
+
+
+
+
+
+
+
+9. If a picture of the machine bed is not shown within the software click on the camera icon next to the automatic height button.
+**Make sure** that the design does not flow over the edges! You should strive to place your design as much in the middle of your board as possible.
 
 ![xTool bed picture](images-for-guides/xtool-images/Align_PCB_on_board.png "xTool bed picture")
 
 
-### Missing images! Coming soon
+10. Stop the framing, and then click the *Auto height ajustment* button, and wait for the machine to complete.
+
+![xTool step 7](images-for-guides/xtool-images/xtool_7.png "xTool step 7")
 
 
-11. Confirm your PCB placement by clicking the *Framing* button in the lower right corner of the xTool window.
+11. Click on the presets just beneith the *Engrave* Tab, and select the preset called *PCB*. Make sure that the cutting parameters match those on the pictures, or the updated settings given to you by your instructers, professor or TA's.
 
-![xTool framing](images-for-guides/xtool-images/Framing.png "xTool framing")
+![xTool step 8](images-for-guides/xtool-images/xtool_8.png "xTool step 8")
 
-Be sure to move your PCB board, so it fits within your [**prepared board**](#preparing-your-pcb). If the *laser-frame* spills over the edges, then **do not cut!** Your PCB will likely come out wrong, and **you may damage the machine!**.
 
-![Framing Good_No-Good](images-for-guides/Pictures/Good_No-Good_marking.png "Framing Good_No-Good")
 
 **This is your last chance to check if everything seems correct**.
 
@@ -233,7 +247,7 @@ Be sure to move your PCB board, so it fits within your [**prepared board**](#pre
 
 When the machine is working, remember to not stare at the burn light on the PCB!
 
-### Missing images! Coming soon
+
 
 ---
 
