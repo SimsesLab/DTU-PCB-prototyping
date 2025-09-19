@@ -283,3 +283,4 @@ Work in progress (monoFab SRM-20)
 | Large LEDs      | LED section             | LED_THT:LED_D5.0mm                                                   |
 | Small LEDs      | LED section             | LED_THT:LED_D3.0mm                                                   |
 | Effect-resistor |                         | Resistor_THT:R_Axial_DIN0617_L17.0mm_D6.0mm_P20.32mm_Horizontal      |
+| Screw terminal (3 connecters)  |                         | TerminalBlock:TerminalBlock_bornier-3_P5.08mm |
