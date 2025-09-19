@@ -283,8 +283,6 @@ Work in progress (monoFab SRM-20)
 | ICs and sockets (8)  | Connector section       | Package_DIP:DIP-8_W7.62mm_LongPads  |
 | ICs and sockets (14) | Connector section       | Package_DIP:DIP-14_W7.62mm_LongPads |
 | ICs and sockets (16) | Connector section       | Package_DIP:DIP-16_W7.62mm_LongPads |
-
-
 | Diodes          |                         | Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal                           |
 | Large LEDs      | LED section             | LED_THT:LED_D5.0mm                                                   |
 | Small LEDs      | LED section             | LED_THT:LED_D3.0mm                                                   |
